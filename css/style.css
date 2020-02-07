@@ -814,14 +814,14 @@ main {
 .user-fw-status li:nth-child(2) {
 	border-bottom: 0;
 }
-.user-fw-status li h4 {
+.user-fw-status li h5 {
 	color: #686868;
-	font-size: 20px;
+	font-size: 14px;
 	margin-bottom: 10px;
 }
 .user-fw-status span {
 	color: #000000;
-	font-size: 20px;
+	font-size: 18px;
 }
 .user-fw-status li a {
 	color: #f51167;
