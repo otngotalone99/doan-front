@@ -864,6 +864,7 @@ main {
 	padding: 15px 20px;
 }
 .suggestion-usd img {
+	width: 35px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	-ms-border-radius: 100px;
@@ -875,6 +876,17 @@ main {
 	padding-left: 10px;
 }
 .sgt-text h4 {
+	color: #000000;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+.quick-access {
+	margin-top: 11px;
+	float: left;
+	padding-left: 10px;
+}
+.quick-access a h5 {
 	color: #000000;
 	font-size: 14px;
 	font-weight: 600;
@@ -6305,9 +6317,9 @@ a:hover {
 	font-size: 14px;
 	font-weight: 600;
 }
-.sd-title h4{
+.sd-title h2{
 	margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 24px;
 }
