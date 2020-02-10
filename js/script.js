@@ -16,6 +16,12 @@ $(window).on("load", function() {
         return false;
     });
 
+    $(".post-project .close-popup").on("click", function(){
+        $(".post-popup.pst-pj").removeClass("active");
+        $(".wrapper").removeClass("overlay");
+        return false;
+    });
+
     //  ============= POST JOB POPUP FUNCTION =========
 
     $(".post-jb").on("click", function(){
@@ -24,6 +30,12 @@ $(window).on("load", function() {
         return false;
     });
     $(".post-project > a").on("click", function(){
+        $(".post-popup.job_post").removeClass("active");
+        $(".wrapper").removeClass("overlay");
+        return false;
+    });
+
+    $(".post-project .close-popup").on("click", function(){
         $(".post-popup.job_post").removeClass("active");
         $(".wrapper").removeClass("overlay");
         return false;
