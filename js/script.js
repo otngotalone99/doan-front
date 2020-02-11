@@ -2,6 +2,20 @@ $(window).on("load", function() {
     "use strict";
 
     
+    //add event-lisener to an image//
+
+    var element = document.getElementById("focus-image");
+    element.addEventListener("click",function(){
+       $(".post-popup.fc_image").addClass("active");
+        $(".wrapper").addClass("overlay");
+        return false; 
+    });
+   $(".post-project > a").on("click", function(){
+        $(".post-popup.fc_image").removeClass("active");
+        $(".wrapper").removeClass("overlay");
+        return false;
+    });
+
 
     //  ============= POST PROJECT POPUP FUNCTION =========
 
