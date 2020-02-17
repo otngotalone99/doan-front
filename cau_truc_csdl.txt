@@ -1,0 +1,74 @@
+NguoiDung
+	ID
+	CustomID (Dùng để đăng nhập, nullable)
+	MatKhau
+	Ho
+	Ten
+	Email (Dùng để đăng nhập)
+	SDT (Dùng để đăng nhập)
+	NgaySinh
+	MoTa (nullable)
+	CongTy (nullable)
+	TruongHoc (nullable)
+	DiaChi (nullable)
+	Website (nullable)
+	FacebookID (nullable)
+	TwitterID (nullable)
+	YoutubeID (nullable)
+	InstagramID (nullable)
+	NgayTao (Ngày tạo profile)
+	NgayCapNhat (nullable, nếu chưa cập nhật lần nào là null)
+	TrangThai (hđ, khoá, khoá tạm thời)
+	
+CaiDatCaNhan
+	UserID
+	AmThanh
+	ThongBao
+	
+BaiViet
+	ID
+	UserID
+	NgayDang (Ngay Gio)
+	NoiDung
+	IDAnh (nullable)
+	QuyenRiengTu
+	TrangThai
+	
+BanBe
+	UserID
+	FriendID
+	QuanHe
+	RelationshipDate
+	AccteptedDate
+	TrangThai (following, accepted, unfollowed)
+	
+PageFollow
+	UserID
+	PageID
+	XemTruoc (??)
+Anh
+	ID
+	UserID
+	Link
+	AnhDaiDien (true, false)
+	QuyenRiengTu
+	TrangThai
+	
+Page
+	ID
+	AdminID (preferences UserID)
+	MatKhau
+	TenTrang
+	DanhMuc
+	Email
+	SDT
+	MoTa (nullable)
+	DiaChi (nullable)
+	Website (nullable)
+	FacebookID (nullable)
+	TwitterID (nullable)
+	YoutubeID (nullable)
+	InstagramID (nullable)
+	NgayTao (Ngày tạo profile)
+	NgayCapNhat (nullable, nếu chưa cập nhật lần nào là null)
+	TrangThai (hđ, khoá, khoá tạm thời)
