@@ -1171,6 +1171,11 @@ main {
 .usy-name h3 a:hover {
 	color: #f51167;
 }
+.usy-name h3 p {
+	display: inline; 
+	text-transform: none; 
+	font-weight: normal;
+}
 .usy-name span {
 	color: #b2b2b2;
 	font-size: 14px;
@@ -6920,4 +6925,10 @@ ul#myTab {
     line-height: 24px;
     font-size: 14px;
     color: #666666;
+}
+
+/* ============= Đổi màu khi bôi đen chữ ============ */
+::selection {
+	background:#f51167;
+	color:#fff;
 }
