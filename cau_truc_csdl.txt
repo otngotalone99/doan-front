@@ -34,6 +34,12 @@ BaiViet
 	QuyenRiengTu
 	TrangThai
 	
+TinNhan
+	IDNguoiGui
+	IDNguoiNhan
+	NoiDung
+	TrangThai
+	
 BanBe
 	UserID
 	FriendID
