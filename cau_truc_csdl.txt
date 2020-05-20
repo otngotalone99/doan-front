@@ -37,6 +37,10 @@ BaiViet
 	TrangThai
 	CamThay
 	
+LuotThich
+	IDBaiViet
+	NguoiThich	
+
 TinNhan
 	IDNguoiGui
 	IDNguoiNhan
