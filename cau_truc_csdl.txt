@@ -18,6 +18,7 @@ NguoiDung
 	InstagramID (nullable)
 	NgayTao (Ngày tạo profile)
 	NgayCapNhat (nullable, nếu chưa cập nhật lần nào là null)
+	ThanhTich
 	TrangThai (hđ, khoá, khoá tạm thời)
 	
 CaiDatCaNhan
@@ -31,9 +32,15 @@ BaiViet
 	NgayDang (Ngay Gio)
 	NoiDung
 	IDAnh (nullable)
+	DiaDiem
 	QuyenRiengTu
 	TrangThai
+	CamThay
 	
+LuotThich
+	IDBaiViet
+	NguoiThich	
+
 TinNhan
 	IDNguoiGui
 	IDNguoiNhan
@@ -55,9 +62,11 @@ PageFollow
 Anh
 	ID
 	UserID
+	IDBaiViet
 	Link
 	AnhDaiDien (true, false)
 	QuyenRiengTu
+	NgayDang
 	TrangThai
 	
 Page
@@ -78,3 +87,13 @@ Page
 	NgayTao (Ngày tạo profile)
 	NgayCapNhat (nullable, nếu chưa cập nhật lần nào là null)
 	TrangThai (hđ, khoá, khoá tạm thời)
+
+DiaDiem
+	ID
+	TenDiaDiem
+	TrangThai
+	
+CamThay
+	ID
+	TenCamThay
+	TrangThai
