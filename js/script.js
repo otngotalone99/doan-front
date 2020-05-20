@@ -17,8 +17,6 @@ $(window).on("load", function() {
         $(".wrapper").removeClass("overlay");
         return false;
     });
-
-
     //  ============= POST PROJECT POPUP FUNCTION =========
 
     $(".post_project").on("click", function() {

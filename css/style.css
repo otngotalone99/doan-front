@@ -1431,7 +1431,7 @@ main {
 	float: right;
 	color: #b2b2b2 !important;
 	font-size: 14px;
-	margin-top: 29px;
+	margin-top: 26px;
 	cursor: pointer;
 }
 .job-status-bar > a:hover {
@@ -1908,7 +1908,7 @@ main {
 
 
 .post-popup {
-	width: 570px;
+	/* width: auto; */
 	margin: 0 auto;
 	position: fixed;
 	top: 50%;
@@ -1922,10 +1922,9 @@ main {
 	visibility: hidden;
 	z-index: 0;
 }
-.post-popup.fc_image {
-	width: 70%;
-	left:50%;
-}
+/* .post-popup.fc_image {
+	width: auto;
+} */
 .post-popup.active {
 	opacity: 1;
 	visibility: visible;
@@ -1935,7 +1934,7 @@ main {
 .post-project > a {
 	position: absolute;
 	top: -20px;
-	right: -20px;
+	/* right: -20px; */
 	color: #fff;
 	font-size: 22px;
 	cursor: pointer;
@@ -1944,8 +1943,8 @@ main {
 	color: #fff;
 }
 .post-project {
-	float: left;
-	width: 100%;
+	float: right;
+	width: 115%;
 	position: relative;
 }
 .post-project h3 {
@@ -1960,13 +1959,13 @@ main {
 }
 .post-project-fields {
 	float: left;
-	width: 100%;
+	width: 115%;
 	padding: 30px 20px;
 	background-color: #fff;
 }
 .post-project-fields img {
 	float:left;
-	width:450px;
+	/* width:450px; */
 	margin-right:30px;
 }
 .post-project-fields .post-left {
