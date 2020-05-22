@@ -1372,7 +1372,7 @@ main {
 
 .job-status-bar {
 	float: left;
-	width: 100%;
+	width: 103%;
 }
 .like-com {
 	float: left;
@@ -1949,7 +1949,7 @@ main {
 }
 .post-project h3 {
 	float: left;
-	width: 100%;
+	width: 115%;
 	background-color: #f51167;
 	color: #fff;
 	text-align: center;
@@ -2101,7 +2101,7 @@ select {
 .sign-in-page {
 	float: left;
 	width: 100%;
-	padding: 100px 0 20px 0;
+	padding: 43px 0 0 0;
 }
 .signin-popup {
 	width: 870px;
@@ -2593,7 +2593,7 @@ select {
 .footy-sec {
 	float: left;
 	width: 100%;
-	margin-top: 70px;
+	margin-top: 45px;
 }
 .footy-sec ul {
 	float: left;

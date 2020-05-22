@@ -1,21 +1,30 @@
 $(window).on("load", function() {
     "use strict";
 
-
     //add event-lisener to an image//
-
+    //open modal
     var element = document.getElementById("focus-image");
     if (element) {
-        element.addEventListener("click", function() {
+        element.addEventListener("click", function () {
             $(".post-popup.fc_image").addClass("active");
             $(".wrapper").addClass("overlay");
             return false;
         });
     }
-    $(".post-project > a").on("click", function() {
+    //close modal
+    $(".post-project > a").on("click", function () {
         $(".post-popup.fc_image").removeClass("active");
         $(".wrapper").removeClass("overlay");
         return false;
+    });
+    // Close modal when click ouside the element
+    $(document).mouseup(function (e) {
+        var container = $(".post-popup");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $(".post-popup").removeClass("active");
+            $(".wrapper").removeClass("overlay");
+            return false;
+        }
     });
     //  ============= POST PROJECT POPUP FUNCTION =========
 
