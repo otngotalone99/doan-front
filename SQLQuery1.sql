@@ -10,6 +10,7 @@ CREATE TABLE NguoiDung  (
 	MatKhau varchar(30),
 	Ho varchar(15),
 	Ten varchar(15),
+	TenPhu varchar(50),
 	Email varchar(100),
 	SDT varchar(15),
 	NgaySinh Date,
@@ -65,17 +66,18 @@ CREATE TABLE BaiViet (
 	QuyenRiengTu int,
 	TrangThai char(30),
 	CamThay varchar(100),
-	CPBL bit
+	CPBL bit,
+	LuotXem int
 )
 
 CREATE TABLE LuotThich (
-	ID int,
-	IDNguoiThich int
+	BaiVietID int,
+	NguoiThichID int
 )
 
 CREATE TABLE BinhLuan (
-	ID int,
-	IDNguoiBL int,
+	BaiVietID int,
+	NguoiBLID int,
 	NoiDung varchar(500),
 	ThoiGian DateTime
 )
@@ -87,6 +89,11 @@ CREATE TABLE TheoDoi (
 	TrangThai varchar(30)
 )
 
+CREATE TABLE BaiVietDaLuu (
+	UserID int,
+	BaiVietID int
+)
+
 CREATE TABLE CaiDatCaNhan (
 	UserID int PRIMARY KEY,
 	AmThanh bit,
@@ -94,10 +101,13 @@ CREATE TABLE CaiDatCaNhan (
 )
 
 ALTER TABLE FanPage ADD FOREIGN KEY (DanhMucID) REFERENCES DanhMucFanPage (ID);
-ALTER TABLE LuotThich ADD FOREIGN KEY (ID) REFERENCES BaiViet (ID);
-ALTER TABLE LuotThich ADD FOREIGN KEY (IDNguoiThich) REFERENCES NguoiDung (ID);
-ALTER TABLE BinhLuan ADD FOREIGN KEY (IDNguoiBL) REFERENCES NguoiDung (ID);
+ALTER TABLE LuotThich ADD FOREIGN KEY (BaiVietID) REFERENCES BaiViet (ID);
+ALTER TABLE LuotThich ADD FOREIGN KEY (NguoiThichID) REFERENCES NguoiDung (ID);
+ALTER TABLE BinhLuan ADD FOREIGN KEY (BaiVietID) REFERENCES BaiViet (ID);
+ALTER TABLE BinhLuan ADD FOREIGN KEY (NguoiBLID) REFERENCES NguoiDung (ID);
 ALTER TABLE TheoDoi ADD FOREIGN KEY (UserID) REFERENCES NguoiDung (ID);
 ALTER TABLE TheoDoi ADD FOREIGN KEY (NguoiTrangTheoDoiID) REFERENCES NguoiDung (ID);
 ALTER TABLE TheoDoi ADD FOREIGN KEY (NguoiTrangTheoDoiID) REFERENCES Fanpage (ID);
 ALTER TABLE CaiDatCaNhan ADD FOREIGN KEY (UserID) REFERENCES NguoiDung (ID);
+ALTER TABLE BaiVietDaLuu ADD FOREIGN KEY (UserID) REFERENCES NguoiDung (ID);
+ALTER TABLE BaiVietDaLuu ADD FOREIGN KEY (BaiVietID) REFERENCES BaiViet (ID);

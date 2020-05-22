@@ -97,3 +97,26 @@ CamThay
 	ID
 	TenCamThay
 	TrangThai
+	
+	
+	
+
+
+* Các danh mục trang
+- Công ty
+- Cửa hàng
+- Trường học
+- Ca sĩ
+- Diễn viên
+- Nghệ sĩ
+- DJ
+- Cộng đồng
+- Fanclub
+- Nhân vật nổi tiếng
+- Nhân vật hư cấu
+- Sách
+- Phim
+- Bài hát
+- Đội thể thao
+- Blog cá nhân
+- Địa điểm
